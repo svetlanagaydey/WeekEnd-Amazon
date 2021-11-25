@@ -1,3 +1,9 @@
-.header__ceil:hover {
-    background: pink;
+.header__logo:hover,
+.header__ceil-item:hover {
+   border: 1px solid white;
+   border-radius: 2px;
+   padding: 9.5px 4px;
 }
+.loc-item:hover {
+    padding-left: 24.5px;
+  }
