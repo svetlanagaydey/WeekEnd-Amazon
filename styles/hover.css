@@ -7,3 +7,12 @@
 .loc-item:hover {
     padding-left: 24.5px;
   }
+.header__nav-item:hover {
+   border: 1px solid white;
+   padding: 4px 6px;
+   border-radius: 2px;
+}
+.header__bottom-right:hover {
+   border: 1px solid white;
+   border-radius: 2px;
+}
