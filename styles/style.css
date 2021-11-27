@@ -478,6 +478,7 @@ li .property-name {
   margin-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #cccccc;
+  position: relative;
 }
 .karusel-title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -489,6 +490,7 @@ li .property-name {
 .sponsor {
   color: var(--text-gray);
   display: inline-block;
+  font-size: 14px;
 }
 .i-span {
   display: inline-block;
@@ -498,23 +500,69 @@ li .property-name {
   border: none;
   border-radius: 50%;
   position: relative;
-  top: 2px;
+  top: 3px;
 }
   
 .i-span::after {
   content: 'i';
-  width: 16px;
-  height: 16px;
+  width: 17px;
+  height: 17px;
   position: absolute;
   color: white;
-  left: 6px;
+  left: 6.5px;
+  top: -3px;
 }
+.karusel-before {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(249, 247, 247);
+  border: solid 1px #cccccc;
+  position: relative;
+  top: 110px;
+  border-radius: 5px;
+}
+.karusel-after{
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: rgb(249, 247, 247);
+  border: solid 1px #cccccc;
+  position: absolute;
+  right: 0;
+  bottom: 240px;
+}
+.karusel-before__button,
+.karusel-after__button {
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.karusel-before__button::after,
+.karusel-after__button::after {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid  rgb(112, 113, 113);
+  border-top: 2px solid   rgb(112, 113, 113);
+  transform: rotate(225deg);
+  position: relative;
+  top: 8px;
+  left: 16px;
+}
+.karusel-after__button::after {
+  transform: rotate(45deg);
+  left: 12px;
+}
+
 .karusel-block {
-  width: 160px;
-  height: 290px;
+  display: inline-block;
+  height: 330px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 0 60px 40px 60px;
 }
 .karusel-item {
   width: 160px;
@@ -528,6 +576,13 @@ li .property-name {
   width: 80px;
   height: 20px;
   background: url(../images/stars4.png);
+  background-repeat: no-repeat;
+}
+.stars4 {
+  display: inline-block;
+  width: 80px;
+  height: 20px;
+  background: url(../images/start4half.png);
   background-repeat: no-repeat;
 }
 .stars-coutn {
