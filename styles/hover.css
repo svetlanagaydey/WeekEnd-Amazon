@@ -16,3 +16,13 @@
    border: 1px solid white;
    border-radius: 2px;
 }
+.add-to-cart:hover {
+   background: #deb900;
+   cursor: pointer;
+}
+.buy-now:hover {
+   background: #FF8F00;
+   cursor: pointer;
+}
+
+
